@@ -1,0 +1,160 @@
+html, body {
+    font-family: arial,sans-serif;
+    height: 100%;
+}
+html, body, div, span, a, form, label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+div.bottom-wrapper {
+	min-height: 100%;
+    margin: 0 auto -60px;
+}
+#gb_advanced {
+	color: #000;
+	font: 13px/27px Arial,sans-serif;
+	left: 0;
+	min-width: 1002px;
+	position: relative;
+	top: 0;
+    width: 100%;
+    height: 60px;
+    background: #f1f1f1;
+}
+.common {
+    height: 60px;
+    line-height: 58px;
+    vertical-align: middle;
+}
+#right {
+    float: right;
+    min-width: 165px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    text-align: right;
+}
+#links {
+    display: inline-block;
+	line-height: normal;
+	position: relative;
+    text-align: left;
+    vertical-align: middle;
+    padding: 0 0 0 15px;
+}
+#image {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    line-height: 0;
+    outline: none;
+    vertical-align: middle;
+}
+#imgspan {
+	background-position: 0 -35px;
+	height: 33px;
+    width: 92px;
+    display: block;
+    background-image: url('https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+    background-size: 528px 68px;
+}
+.appbar {
+	color: #d93025;
+	font-size: 20px;
+	margin: 25px 35px;
+}
+div.main {
+	max-width: 1140px;
+	min-width: 200px;
+    width: 96%;
+	margin: 40px 2% 0 45px;
+}
+div.form {
+	width: 100%;
+	clear: both;
+}
+div.field {
+    clear: both;
+}
+.title{
+	float: left;
+	min-width: 167px;
+	width: 16%;
+	height: 42px;
+	color: #222;
+	font-size: 13px;
+	line-height: 16px;
+}
+.middle {
+	float: left;
+	min-width: 167px;
+	min-height: 41px;
+	width: 50%;
+}
+.middle input[type="text"] {
+    width: 100%;
+    text-align: left;
+}
+.todo {
+    float: left;
+    width: 32%;
+    min-width: 160px;
+    margin: 0 0 8px 1%;
+    color: #555;
+    font-size: 11px;
+    padding-left: 5px;
+    position: relative;
+}
+div.text {
+	height: 30px;
+	display: table-cell;
+	vertical-align: middle;
+}
+span.monospace {
+	color: #666;
+	font-family: monospace;
+	font-size: 11px;
+	white-space: pre;
+}
+.jfk-button {
+    float: right;
+    margin: 10px 0;
+    padding: 0 12px;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    outline: 0;
+}
+.jfk-button-action {
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: -moz-linear-gradient(top, #4d90fe, #4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+}
+.jfk-button-action:hover {
+    background-color: #357ae8;
+    background-image: -moz-linear-gradient(top, #4d90fe, #357ae8);
+    border: 1px solid #2f5bb7;
+    border-image: initial;
+}
+.jfk-button-action:active {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    background: #357ae8;
+    border: 1px solid #2f5bb7;
+    border-top: 1px solid #2f5bb7;
+}
+.jfk-button-action:focus {
+    box-shadow: inset 0 0 0 1px #fff;
+    border: rgba(0, 0, 0, 0) solid 1px;
+    outline: rgba(0, 0, 0, 0) 0;
+}

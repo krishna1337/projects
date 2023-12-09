@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="advanced.css">
+        <style>
+        .heading {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+        }
+        .help {
+            font-size: 13px;
+            color: #777;
+            margin: 0;
+            font-weight: 700;
+        }
+        .inputbar {
+            padding-right: 16px;
+        }
+        .jfk-textinput {
+            border-radius: 1px;
+            border: 1px solid #d9d9d9;
+            border-top: 1px solid #c0c0c0;
+            font-size: 13px;
+            height: 25px;
+            padding: 1px 8px;
+        }
+         </style>
+    </head>
+<body>
+    <div class="bottom-wrapper">
+        <div id="gb_advanced">
+            <div id="right" class="common">
+                <div id="links">
+                    <a class="header_links" href="index.html" target="_top">Search</a>
+                    <!--
+                     --><a class="header_links" href="image.html" target="_top">Images</a>
+                    <!--
+                     --><a id="signin" href="https://accounts.google.com/ServiceLogin?hl=en" target="_top">Sign in</a>
+                </div>
+            </div>
+            <div class="common" style="max-width:152px;min-width:152px">
+                <div style="position:absolute;padding: 0 20px 0 15px">
+                    <a id="image" href="https://www.google.com" title="Go to Google Home">
+                        <span id="imgspan"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="appbar">
+            <label style="margin-left:10px">Advanced Search</label>
+        </div>
+        <div style="border-bottom:1px solid #ebebeb"></div>
+        <div class="main">
+            <form action="https://google.com/search" method="GET" autocomplete="off">
+                <div class="form">
+                    <div id="heading" style="clear:both">
+                        <div class="heading title">
+                            <div class="text">
+                                <span>Find pages with...</span>
+                            </div>
+                        </div>
+                        <div class="middle"></div>
+                        <div class="help todo">
+                            <div class="text">To do this in the search box.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="field">
+                        <div class="title">
+                            <div class="text">
+                                <label for="a">all these words:</label>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <div class="inputbar">
+                                <input id="a" class="jfk-textinput" name="as_q" type="text">
+                            </div>
+                        </div>
+                        <div class="todo">
+                            <div class="text">
+                                Type the important words:
+                                <span class="monospace">tri-colour rat terrier</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="title">
+                            <div class="text">
+                                <label for="b">this exact word or phrase:</label>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <div class="inputbar">
+                                <input id="b" class="jfk-textinput" name="as_epq" type="text">
+                            </div>
+                        </div>
+                        <div class="todo">
+                            <div class="text">
+                                Put exact words in quotes:
+                                <span class="monospace">"rat terrier"</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="title">
+                            <div class="text">
+                                <label for="c">any of these words:</label>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <div class="inputbar">
+                                <input id="c" class="jfk-textinput" name="as_oq" type="text">
+                            </div>
+                        </div>
+                        <div class="todo">
+                            <div class="text">Type
+                                <span class="monospace">OR</span> between all the words you want:
+                                <span class="monospace">miniature OR standard</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="title">
+                            <div class="text">
+                                <label for="d">none of these words:</label>
+                            </div>
+                        </div>
+                        <div class="middle">
+                            <div class="inputbar">
+                                <input id="d" class="jfk-textinput" name="as_eq" type="text">
+                            </div>
+                        </div>
+                        <div class="todo">
+                            <div class="text">
+                                Put a minus sign just before words that you don't want:
+                                <span class="monospace">-rodent, -"Jack Russell"</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="title"></div>
+                        <div class="middle" style="text-align:right">
+                            <input class="jfk-button jfk-button-action"
+                            style="user-select:none;line-height:100%;height:30px;min-width:120px"
+                            value="Advanced Search" type="submit">
+                        </div>
+                        <div class="todo"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="fbarcnt">
+        <div id="fbar">
+            <div class="fbar" style="border-bottom:1px solid #e4e4e4;">
+                <div id="country" style="margin-left:45px;">
+                    <span style="font-size:15px;">India</span>
+                </div>
+            </div>
+            <div class="fbar">
+                <style>
+                    .fbar a {color: #5f6368;}
+                    .fbar a:hover {
+                        color: #333;
+                        text-decoration: none; 
+                    }
+                </style>
+                <span style="margin-left:45px;">
+                    <a class="footer_links" href="https://support.google.com/websearch/">Help</a><!--
+                 --><a class="footer_links" href="https://policies.google.com/privacy?hl=en">Privacy</a><!--
+                 --><a class="footer_links" href="https://policies.google.com/terms?hl=en">Terms</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

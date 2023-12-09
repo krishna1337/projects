@@ -1,0 +1,115 @@
+body {
+  font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+hr {
+  margin: 0.5rem 0;
+  border-top: 1px solid black;
+}
+
+.view {
+  display: flex;
+  height: calc(-56px + 100%);
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.sidebar {
+  width: 220px;
+  border-right: 1px solid;
+  margin-right: 10px;
+  padding: 15px 15px 0 0;
+}
+
+#wrapper {
+  flex-grow: 1;
+}
+
+.messages {
+  overflow: hidden scroll;
+  height: 80%;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 35px;
+}
+
+.loading span {
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+.loading span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.navbar {
+  height: 56px;
+}
+
+@media screen and (min-width: 576px) {
+  #form-responsive {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #form-normal, .sidebar {
+    display: none;
+  }
+  #form-responsive {
+    padding: 0 20px;
+    justify-content: center;
+  }
+  .sidebar-show {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    height: calc(-56px + 100%);
+    background: #f8f8f8;
+  }
+  .unclickable {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+  .nav-item {
+    padding: 0 0.5rem;
+  }
+}

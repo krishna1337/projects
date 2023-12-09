@@ -1,0 +1,56 @@
+.camera {
+	display: flex;
+	flex: 0 0 auto;
+	margin-top: -5px;
+	align-items: stretch;
+	flex-direction: row;
+}
+#camera {
+	flex: 1 0 auto;
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+	border: 0;
+	background: transparent;
+	outline: none;
+	padding: 0 8px;
+}
+#camera_span {
+	height: 24px;
+	width: 24px;
+	background: url('https://www.gstatic.com/images/icons/material/system/2x/photo_camera_grey600_24dp.png') 0 0 no-repeat;
+	background-size: 24px;
+}
+.button {
+    height: 44px;
+    width: 44px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    flex: 0 0 auto;
+    padding: 0;
+    padding-right: 13px;
+}
+#blue {
+	background: none;
+	color: #4285f4;
+	height: 24px;
+	width: 24px;
+	margin: auto;
+}
+#blue_span {
+	display: inline-block;
+	fill: currentColor;
+	height: 24px;
+	line-height: 24px;
+	position: relative;
+	width: 24px;
+}
+.logo-subtext {
+	color: #4285f4;
+	font: 16px/16px roboto-regular, arial, sans-serif;
+	left: 215px;
+	position: relative;
+	top: 76px;
+	white-space: nowrap;
+}
